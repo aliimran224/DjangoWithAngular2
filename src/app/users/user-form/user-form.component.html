@@ -1,0 +1,76 @@
+<h5>{{ title }}</h5>
+<div class="row">
+  <form materialize class="col s12" role="form" >
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate" name="name"
+               [(ngModel)]="user.name" >
+        <label for="name"
+               >
+          Name
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" class="validate"
+               [(ngModel)]="user.email" name="email"
+               >
+        <label for="email"
+               [class.active]="user.email"
+               data-error="Invalid Email">
+          Email
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">phone</i>
+        <input id="phone" type="text" class="validate" name="phone"
+               [(ngModel)]="user.phone" >
+        <label for="phone" [class.active]="user.phone">Phone</label>
+      </div>
+    </div>
+    <div >
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-icons prefix">place</i>
+          <input id="street" type="text" class="validate"
+                 [(ngModel)]="user.street" name="street" >
+          <label for="street"
+                 [class.active]="user.street"
+                 data-error="Invalid Street">
+            Street
+          </label>
+        </div>
+        <div class="input-field col s4">
+          <input id="suite" type="text" class="validate"
+                 [(ngModel)]="user.suite" name="suite">
+          <label for="suite" [class.active]="user.suite">Suite</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-icons prefix">map</i>
+          <input id="city" type="text" class="validate"
+                 [(ngModel)]="user.city" name="city">
+          <label for="city" [class.active]="user.city">City</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="zipcode" type="text" class="validate"
+                 [(ngModel)]="user.zipcode" name="zipcode" >
+          <label for="zipcode"
+                 [class.active]="user.zipcode"
+                 data-error="Invalid ZipCode">
+            ZipCode
+          </label>
+        </div>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" >
+      Submit<i class="material-icons right" (click)="save(user)" >send</i>
+    </button>
+  </form>
+</div>

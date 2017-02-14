@@ -11,18 +11,18 @@
 	c.List what versions of Node are currently installed (probably none).
 	
 
-	d.Install latest Node.js release. We are using v6.9.1 here.
+	b.Install latest Node.js release. We are using v6.9.1 here.
 
 	nvm install v6.9.1 
 
-2. Check the Node.js and  npm version()
+2. Check the Node.js and  npm version
 	node -v
 	npm -v
 
 3. Install Angular-Cli using the following command
 	npm install -g angular-cli
 
-4. Install other package using the following command
+4. Go project directory where package.json is located. Install other package using the following command
          npm install
 
 5. Go project directory, Open new Terminal window and run the application using the command:

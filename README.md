@@ -23,7 +23,7 @@
 	- npm install -g angular-cli
 
 4. Go project directory where package.json is located and Install other package using the following command:
-         - npm install
+        - npm install
 
 5. Go project directory, Open new Terminal window and run the application using the command:
 	- ng serve

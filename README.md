@@ -16,17 +16,17 @@
 	nvm install v6.9.1 
 
 2. Check the Node.js and  npm version
-	node -v
-	npm -v
+	- node -v
+	- npm -v
 
 3. Install Angular-Cli using the following command
-	npm install -g angular-cli
+	- npm install -g angular-cli
 
 4. Go project directory where package.json is located. Install other package using the following command
-         npm install
+         - npm install
 
 5. Go project directory, Open new Terminal window and run the application using the command:
-	ng serve
+	- ng serve
 
 
 
